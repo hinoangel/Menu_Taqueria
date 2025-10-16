@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Punto del Taco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fondo-animado"></div>
+
+  <header class="animar-entrada">
+    <h1>🌮 El Punto del Taco 🌮</h1>
+    <p class="frase">"No vendemos tacos... vendemos felicidad."</p>
+  </header>
+
+  <main class="animar-entrada">
+    <section id="menuPrincipal">
+      <h2>Selecciona una categoría</h2>
+      <div class="botones">
+        <button onclick="mostrarSeccion('tacos')">🌮 Tacos</button>
+        <button onclick="mostrarSeccion('bebidas')">🥤 Bebidas</button>
+        <button onclick="mostrarSeccion('postres')">🍰 Postres</button>
+      </div>
+    </section>
+
+    <section id="tacos" class="oculto animar-entrada">
+      <h2>Tacos Especiales</h2>
+      <div class="grid">
+        <div class="card brilla">
+          <img src="img/pastor.jpg" alt="Taco de Pastor">
+          <h3>PASTOR</h3>
+          <p class="precio">$20</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/longaniza.jpg" alt="Taco de Longaniza">
+          <h3>LONGANIZA</h3>
+          <p class="precio">$20</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/costilla.jpg" alt="Taco de Costilla">
+          <h3>COSTILLA</h3>
+          <p class="precio">$25</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/bistec.jpg" alt="Taco de Bistec">
+          <h3>BISTEC</h3>
+          <p class="precio">$20</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/campechano.jpg" alt="Taco Campechano">
+          <h3>CAMPECHANO</h3>
+          <p class="precio">$25</p>
+        </div>
+      </div>
+      <button class="volver reflejo" onclick="volver()">⬅ Volver</button>
+    </section>
+
+    <section id="bebidas" class="oculto animar-entrada">
+      <h2>Bebidas</h2>
+      <div class="grid">
+        <div class="card brilla">
+          <img src="img/horchata.jpg" alt="Horchata">
+          <h3>HORCHATA (MEDIO)</h3>
+          <p class="precio">$15</p>
+          <h3>HORCHATA (1 LITRO)</h3>
+          <p class="precio">$30</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/jamaica.jpg" alt="Jamaica">
+          <h3>JAMAICA (MEDIO)</h3>
+          <p class="precio">$15</p>
+          <h3>JAMAICA (1 LITRO)</h3>
+          <p class="precio">$30</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/limonada.jpg" alt="Limonada">
+          <h3>LIMONADA (MEDIO)</h3>
+          <p class="precio">$15</p>
+          <h3>LIMONADA (1 LITRO)</h3>
+          <p class="precio">$30</p>
+        </div>
+      </div>
+      <button class="volver reflejo" onclick="volver()">⬅ Volver</button>
+    </section>
+
+    <section id="postres" class="oculto animar-entrada">
+      <h2>Postres</h2>
+      <div class="grid">
+        <div class="card brilla">
+          <img src="img/pay-limon.jpg" alt="Pay de Limón">
+          <h3>PAY DE LIMÓN</h3>
+          <p class="precio">$25</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/pay-mango.jpg" alt="Pay de Mango">
+          <h3>PAY DE MANGO</h3>
+          <p class="precio">$25</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/waffles.jpg" alt="Waffles">
+          <h3>WAFFLES</h3>
+          <p class="precio">$30</p>
+        </div>
+        <div class="card brilla">
+          <img src="img/papas.jpg" alt="Papas a la Francesa">
+          <h3>PAPAS A LA FRANCESA</h3>
+          <p class="precio">$25</p>
+        </div>
+      </div>
+      <button class="volver reflejo" onclick="volver()">⬅ Volver</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>✨ Síguenos en Instagram ✨</p>
+    <p>@hrnan.privv · @ShopLuxAndFlow · @lunabayan777</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
